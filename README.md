@@ -1,2 +1,2 @@
 # New rj project
-## Jerusha
+## Jerusha Gomes
