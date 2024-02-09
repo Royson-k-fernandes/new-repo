@@ -1,29 +1,30 @@
 console.log(`Hello Lord Jesus Christ ❤️ `);
 
 let x = 10;
-if(true) {
-    let y = 20;
-    var z = 30;
-    console.log(x + y + z);
+if (true) {
+  let y = 20;
+  var z = 30;
+  console.log(x + y + z);
 }
 console.log(x + z);
 
-
-function salute(name) {
-    return `Hello ${name}`
+function sayHello() {
+  return`Hello`;
 }
 
-let result = salute('Roy');
-if(result === 'Hello Roy') {
-    console.log('PASS')
-}
-else {
-    console.log('FAIL')
+function greet() {
+    const message = sayHello();
+    console.log(message + ", my world");
 }
 
+greet();
 
-function greet(who) {
-    console.log('Hello ' + who)
+function countdown(num) {
+    if (num <= 0) {
+        console.log('Done!');
+        return;
+    }
+    console.log(num);
+    countdown(num - 1)
 }
-greet('RJ')
-console.log('bye')
+countdown(5);
